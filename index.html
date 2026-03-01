@@ -11,6 +11,13 @@
     --accent:#2b9348;
     --muted:#4a5568;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   body{
     font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     background: linear-gradient(180deg,#eef7f0 0%, #f7fbff 100%);
@@ -18,6 +25,7 @@
     padding:36px;
     display:flex;
     justify-content:center;
+    flex-direction: column;
   }
   .card{
     width:100%;
@@ -83,7 +91,7 @@
     <div id="result" aria-live="polite"></div>
     <div class="small">Notes: Supports positive integers. For 0 / 1 / negatives special messages are shown.</div>
   </div>
-
+<a href="regslip.html">Registration Slip</a>
 <script>
 function compute(){
   const inEl = document.getElementById('number');
